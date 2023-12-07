@@ -32,19 +32,18 @@ export const HeroCard = ({
               <p className="card-text">
                 {alter_ego}
               </p>
-              <p>
+             
 
                 { (alter_ego !== characters) && <p> {characters} </p> }
-                
+
                 <p className="card-text">
                   <small className="text-muted">{first_appearance}</small>
                 </p>
 
-                <Link to={`./hero/${id}`}>
+                <Link to={`/hero/${id}`}>
                   Más...
                 </Link>
 
-              </p>
             </div>
 
           </div>
