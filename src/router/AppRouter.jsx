@@ -10,12 +10,15 @@ export const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="login" element={
-          
+        <Route path="/login" element={
+
           // Si el usuario ya esta logeado, lo redirecciona a la pagina principal
           // en el caso que quiera ir a /login, para ir a /login, debe deslogearse
           <PublicRoute>
             <LoginPage />
+            {/* <Routes>
+              <Route path="/*" element={<LoginPage />} />
+            </Routes> */}
           </PublicRoute>
         } />
 
